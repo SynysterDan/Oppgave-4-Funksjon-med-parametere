@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 4</title>
+</head>
+
+<body>
+    <div id="colorDiv"></div>
+    <button onclick="changeColorAndText('red',100,150,'Woah den er rød')"> Smol </button>
+    <button onclick="changeColorAndText('purple',150,300,'omg NÅ ER DEN LILLA')"> BEEEG </button>
+
+
+    <script>
+        let colorDiv = document.getElementById('colorDiv');
+        function changeColorAndText(color, width, height,text) {
+            colorDiv.innerHTML = /*HTML*/`
+                <div style="background-color:${color}; width: ${width}px; height: ${height}px;">${text}</div>
+         `;
+        }
+    </script>
+
+</body>
+
+</html>
